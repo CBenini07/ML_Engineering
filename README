@@ -1,1 +1,8 @@
 # ML Engineering
+
+## Chat com Ollama
+'''bash
+# Para rodar o arquivo LLM_chat_llma é necessário realizar o download do modelo localmente
+irm https://ollama.com/install.ps1 | iex
+ollama pull llama3.2
+'''
