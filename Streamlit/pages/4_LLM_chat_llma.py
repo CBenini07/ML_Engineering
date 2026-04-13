@@ -1,6 +1,8 @@
 import streamlit as st
 import requests
 
+st.set_page_config(page_title="LLM chat (llma)")
+
 # --- CONFIG LLAMA MODEL -------------------------------------------------------------
 OLLAMA_API_URL = "http://localhost:11434/api/chat"
 
@@ -9,7 +11,8 @@ if "llama_model" not in st.session_state:
 
 # --- APLICAÇÃO -------------------------------------------------------------
 st.markdown("# Cauã's AI ")
-st.markdown(" Basic LLM chatbot based on Ollama's Llama model")
+st.markdown(" Modelo básico de chatbot baseado no modelo llma3.2 do Ollama.")
+
 
 # Inicializar o histórico do chat
 if "messages" not in st.session_state:

@@ -4,6 +4,8 @@ import time
 import random
 from openai import OpenAI
 
+st.set_page_config(page_title="LLM chat (OpenAI)")
+
 # --- CONFIG GPT MODEL -------------------------------------------------------------
 CLIENT = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
@@ -12,7 +14,8 @@ if "openai_model" not in st.session_state:
 
 # --- APLICAÇÃO -------------------------------------------------------------
 st.markdown("# Cauã's AI ")
-st.markdown(" Basic LLM chatbot based on OpenAI's API")
+st.markdown(" Chatbot básico baseado nos modelos GPTs (OpenAI).")
+
 
 # Inicializar o histórico do chat (Como o Streamlit fica em costante 
 # loop, é importante para não reescrever as mensagens)

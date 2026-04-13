@@ -5,6 +5,8 @@ import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 import time
 
+st.set_page_config(page_title="Clustering Demo", page_icon="📈")
+
 # --- FUNÇÕES -----------------------------------------------------------------------------------------
 # Cria N pontos num espaço 1000 X 1000
 def cria_pontos(N):

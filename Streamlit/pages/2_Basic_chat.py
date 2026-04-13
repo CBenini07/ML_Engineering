@@ -2,7 +2,8 @@ import streamlit as st
 import numpy as np
 import time
 import random
-from openai import OpenAI
+
+st.set_page_config(page_title="Basic chat (random)")
 
 # --- FUNÇÕES -------------------------------------------------------------
 def response_generator():
@@ -19,7 +20,7 @@ def response_generator():
 
 # --- APLICAÇÃO -------------------------------------------------------------
 st.markdown("# Cauã's AI ")
-st.markdown(" Basic chatbot based on random responses from a pre-defined list.")
+st.markdown(" Chatbot básico baseado em respostas aleatórias de uma lista pré-definida.")
 
 # with st.chat_message(name="user", avatar="🦖"): #Pode-se trocar a imagem também por ícones disponíveis em https://fonts.google.com/icons?icon.set=Material+Symbols&icon.style=Rounded
 #     st.write("Hello! 👋")
